@@ -1,0 +1,25 @@
+@startuml
+title OS Lab application architecture
+
+actor Student
+component "JavaFX Views" as Views
+component Controllers
+component Services
+component Algorithms
+database SQLite
+component Models
+
+Student --> Views
+Views --> Controllers
+Controllers --> Services
+Services --> Algorithms
+Algorithms --> Models
+Services --> Models
+Services --> SQLite
+Controllers --> Models
+
+note right of Services
+Analytics, reports, validation,
+and simulation coordination
+end note
+@enduml

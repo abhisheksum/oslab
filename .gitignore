@@ -1,0 +1,16 @@
+# Maven and Java build output
+target/
+*.class
+
+# Local runtime data and generated reports
+*.db
+*.db-shm
+*.db-wal
+oslab-report.csv
+oslab-report.pdf
+
+# IDE and OS metadata
+.idea/
+*.iml
+.vscode/
+.DS_Store
